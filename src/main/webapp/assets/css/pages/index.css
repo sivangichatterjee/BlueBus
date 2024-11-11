@@ -1,0 +1,217 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+#heading{
+    font-style: italic;
+    font-weight: 500;
+}
+#mainNavbar .nav-link{
+    color:black;
+    padding-inline: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}  
+#mainNavbar .nav-link:hover{
+    color:#2438a7;
+}
+.btn-colour{
+    background-color:#ff5e5b;
+    margin-top: 20px;
+    color: white;
+}
+.btn:hover{
+    background-color:#E34949;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+#mainNavbar{
+    font-size: 1.5rem;
+    font-weight: 300;  
+}
+.navbar.scrolled{
+    background: #6BCBF6;
+    transition: background 500ms;
+}
+.full-bg{
+
+
+    background-image: url("../../image/bus_bg.jpg");
+
+    height: 600px;
+    margin-top: -6.3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#head1{
+    padding-top: 25rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #e1f5fe;
+}
+#head2{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    color: #e1f5fe;
+}
+#logo{
+    width: 120px;;
+    margin-left: 2% ;
+    padding-top: 0%;
+}
+#box1{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 950px;
+    max-height: 156px;
+    transform: translateY(-50%);
+}
+.form1{
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container-fluid{
+    padding-top:2rem
+}
+.admin{
+    color: white;
+    font-size: 1.5rem;
+}
+@media(max-width:1000px)
+{
+    .full-bg{
+        margin-right: -2rem;
+        margin-top: 0;
+    }
+    .address{
+        padding-top: 1.5rem;
+    }
+    .feature{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .box3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .foot-note{
+    display: flex;
+    align-items: flex-end;
+    }
+}
+#picture{
+    height: 250px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.col-center{
+    margin: 0 auto;
+    float: none!important;
+}
+.carousel{
+    margin: 50px auto;
+    padding: 0 70px;
+}
+.carousel-item {
+color: #999;
+text-align: center;
+overflow: hidden;
+min-height: 290px;
+}
+.carousel-item .img-area{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+.carousel .img-area img{
+    width: 100%;
+    height:100%;
+    display: block;
+    border-radius: 50%;
+}
+.carousel-caption{
+    color: black;
+    position: static;
+    padding-bottom: 15px;
+    padding-top: 0;
+}
+.carousel-indicators{
+bottom: -35px;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-indicators li, .carousel-indicators li.active{
+width: 10px;
+height: 10px;
+margin: 1px 3px;
+border-radius: 50%;
+}
+.carousel-indicators li{
+    background: #999;
+    border-color: transparent;
+    box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active{
+    background: #555;
+    box-shadow: inset 0 2px 1px rgb(0,0,0,0.2);
+}
+.foot-note{
+    height: 200px;
+    background: #152165;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #E34949;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

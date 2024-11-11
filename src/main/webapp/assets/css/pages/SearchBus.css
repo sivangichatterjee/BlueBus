@@ -1,0 +1,93 @@
+@import url(../var.css);
+@import url(../color.css);
+
+body{
+    padding-top: 132px ;
+}
+.serachElements{
+    height: 60px;
+    width: 100%;
+    border: 0;
+    
+}
+.sticky-offset{
+   top: 132px;
+  
+}
+
+.search-field{
+    border-radius: 7px;
+    background-color: white;
+}
+.button{
+    background-color: var(--seconday-theme-color);
+    color: white ;
+    
+}
+.button:hover{
+   background-color: var(--seconday-highlight-theme-color);
+}
+
+.filter-bar{
+    border-right: 1px solid var(--primary-theme-color);
+    
+    
+}
+.filter{
+    text-align: center;
+}
+
+.bus{
+    border: 1px solid var(--primary-theme-color);
+    border-radius: 7px;
+    
+}
+.features{
+    border: 1px solid var(--primary-theme-color);
+    border-radius: 10px;
+    background-color: var(--primary-light-theme-color) ;
+    color: var(--primary-theme-color);
+}
+
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #E34949;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

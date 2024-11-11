@@ -1,0 +1,54 @@
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.admin-logo {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.rounded-corner {
+    border-top-left-radius: 2.25rem;
+
+    border-bottom-right-radius: 2.25rem ;
+
+    border-top-right-radius: 2.25rem ;
+
+    border-bottom-left-radius: 2.25rem ;
+
+}
+
+nav {
+    height: 100px;
+    background: #3D6098;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+
+}
+
+.btn-color {
+    background: #FF5E5B;
+    color :  white;
+}
+
+.border-1 {
+    border: 1px solid #3D6098;
+}
+.logo
+{
+    content: url("../../image/BlueBus_icon.png");
+    height: 80px;
+    vertical-align: middle
+  
+}
+.middle
+{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
